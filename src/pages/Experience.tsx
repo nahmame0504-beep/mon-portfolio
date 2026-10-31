@@ -49,7 +49,7 @@ export default function Experience() {
               <p className="mt-3 text-sm text-muted-foreground leading-relaxed">{exp.description}</p>
 
               <div className="mt-4 flex flex-wrap gap-1.5">
-                {exp.technologies.map((tech) => (
+                {exp.technologies?.map((tech) => (
                   <Badge key={tech} variant="outline" className="text-xs">
                     {tech}
                   </Badge>
